@@ -40,7 +40,7 @@
                     <td> {{ $article->title }} </td>
                     <td> {{ $article->description }} </td>
                     <td>
-                        <form action="{{ route('articles.destroy', $article-id) }}" method="POST">
+                        <form action="{{ route('articles.destroy', $article->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
 

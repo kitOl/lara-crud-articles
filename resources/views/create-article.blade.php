@@ -16,12 +16,12 @@
             <div class="card shadow">
                 @if (Session::has('success'))
                     <div class="alert alert-success alert-dismissible">
-                        <button class="close" type="button" data-dissmiss="alert"> x </button>
+                        <button class="close" type="button" data-dismiss="alert"> x </button>
                         {{ Session::get('success') }}
                     </div>
                 @elseif (Session::has('failed'))
                     <div class="alert alert-danger alert-dismissible">
-                        <button class="close" type="button" data-dissmiss="alert"> x </button>
+                        <button class="close" type="button" data-dismiss="alert"> x </button>
                         {{ Session::get('failed') }}
                     </div>
                 @endif
